@@ -6,10 +6,10 @@ import os.path
 #The numbers used as variable and the geolocations are w.r.t the BCC sensor ID and the placement of those sensors in the selecetd road network.
 #Kelvin Grove road 
 #API calls 
-API_10035_10303=requests.get("https://dev.virtualearth.net/REST/v1/Routes/DistanceMatrix?origins=-27.4596556832,153.014583501&destinations=-27.4511774594,153.010885566&travelMode=driving&timeUnit=second&key=AmNLMVwCflw6GxKxfDThujTfsVEkABm1zx6aWyhfBfwJ2o0MMu9VRjjXsSwHrGnn")
-API_10303_10307=requests.get("https://dev.virtualearth.net/REST/v1/Routes/DistanceMatrix?origins=-27.4511774594,153.010885566&destinations=-27.4443529585,153.007455934&travelMode=driving&timeUnit=second&key=AmNLMVwCflw6GxKxfDThujTfsVEkABm1zx6aWyhfBfwJ2o0MMu9VRjjXsSwHrGnn")
-API_10307_10303=requests.get("https://dev.virtualearth.net/REST/v1/Routes/DistanceMatrix?origins=-27.4446214308,153.007716062&destinations=-27.4511855477,153.011021478&travelMode=driving&timeUnit=second&key=AmNLMVwCflw6GxKxfDThujTfsVEkABm1zx6aWyhfBfwJ2o0MMu9VRjjXsSwHrGnn")
-API_10303_10035=requests.get("https://dev.virtualearth.net/REST/v1/Routes/DistanceMatrix?origins=-27.4511855477,153.011021478&destinations=-27.4598909273,153.014964537&travelMode=driving&timeUnit=second&key=AmNLMVwCflw6GxKxfDThujTfsVEkABm1zx6aWyhfBfwJ2o0MMu9VRjjXsSwHrGnn")
+API_10035_10303=requests.get("https://dev.virtualearth.net/REST/v1/Routes/DistanceMatrix?origins=-27.4596556832,153.014583501&destinations=-27.4511774594,153.010885566&travelMode=driving&timeUnit=second&key="ENTER API KEY HERE")
+API_10303_10307=requests.get("https://dev.virtualearth.net/REST/v1/Routes/DistanceMatrix?origins=-27.4511774594,153.010885566&destinations=-27.4443529585,153.007455934&travelMode=driving&timeUnit=second&key="ENTER API KEY HERE")
+API_10307_10303=requests.get("https://dev.virtualearth.net/REST/v1/Routes/DistanceMatrix?origins=-27.4446214308,153.007716062&destinations=-27.4511855477,153.011021478&travelMode=driving&timeUnit=second&key="ENTER API KEY HERE")
+API_10303_10035=requests.get("https://dev.virtualearth.net/REST/v1/Routes/DistanceMatrix?origins=-27.4511855477,153.011021478&destinations=-27.4598909273,153.014964537&travelMode=driving&timeUnit=second&key="ENTER API KEY HERE")
 #Json extraction 
 Distance_10035_10303=API_10035_10303.json()["resourceSets"][0]["resources"][0]["results"][0]["travelDistance"]
 Time_10035_10303=API_10035_10303.json()["resourceSets"][0]["resources"][0]["results"][0]["travelDuration"]
