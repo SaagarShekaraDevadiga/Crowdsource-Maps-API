@@ -6,10 +6,10 @@ import os.path
 #The numbers used as variable and the geolocations are w.r.t the BCC sensor ID and the placement of those sensors in the selecetd road network.
 #Kelvin Grove road 
 #API calls 
-API_10035_10303=requests.get("https://route.api.here.com/routing/7.2/calculateroute.json?app_id=SRVnBFmfBJ71awkDteFZ&app_code=TgwZ0by1O4tjs6QkXzTmtw&waypoint0=geo!-27.4596556832,153.014583501&waypoint1=geo!-27.4511774594,153.010885566&mode=fastest;car;traffic:disabled")
-API_10303_10307=requests.get("https://route.api.here.com/routing/7.2/calculateroute.json?app_id=SRVnBFmfBJ71awkDteFZ&app_code=TgwZ0by1O4tjs6QkXzTmtw&waypoint0=geo!-27.4511774594,153.010885566&waypoint1=geo!-27.4443529585,153.007455934&mode=fastest;car;traffic:disabled")
-API_10307_10303=requests.get("https://route.api.here.com/routing/7.2/calculateroute.json?app_id=SRVnBFmfBJ71awkDteFZ&app_code=TgwZ0by1O4tjs6QkXzTmtw&waypoint0=geo!-27.4446214308,153.007716062&waypoint1=geo!-27.4511855477,153.011021478&mode=fastest;car;traffic:disabled")
-API_10303_10035=requests.get("https://route.api.here.com/routing/7.2/calculateroute.json?app_id=SRVnBFmfBJ71awkDteFZ&app_code=TgwZ0by1O4tjs6QkXzTmtw&waypoint0=geo!-27.4511855477,153.011021478&waypoint1=geo!-27.4598909273,153.014964537&mode=fastest;car;traffic:disabled")
+API_10035_10303=requests.get("https://route.api.here.com/routing/7.2/calculateroute.json?app_id="ENTER APP ID HERE"&app_code="ENTER APP CODE HERE"&waypoint0=geo!-27.4596556832,153.014583501&waypoint1=geo!-27.4511774594,153.010885566&mode=fastest;car;traffic:disabled")
+API_10303_10307=requests.get("https://route.api.here.com/routing/7.2/calculateroute.json?app_id="ENTER APP ID HERE"&app_code="ENTER APP CODE HERE"&waypoint0=geo!-27.4511774594,153.010885566&waypoint1=geo!-27.4443529585,153.007455934&mode=fastest;car;traffic:disabled")
+API_10307_10303=requests.get("https://route.api.here.com/routing/7.2/calculateroute.json?app_id="ENTER APP ID HERE"&app_code="ENTER APP CODE HERE"&waypoint0=geo!-27.4446214308,153.007716062&waypoint1=geo!-27.4511855477,153.011021478&mode=fastest;car;traffic:disabled")
+API_10303_10035=requests.get("https://route.api.here.com/routing/7.2/calculateroute.json?app_id="ENTER APP ID HERE"&app_code="ENTER APP CODE HERE"&waypoint0=geo!-27.4511855477,153.011021478&waypoint1=geo!-27.4598909273,153.014964537&mode=fastest;car;traffic:disabled")
 #Json extraction 
 X = {}
 X["Segment_1"]=1003510303
